@@ -10,7 +10,7 @@ const app = express();
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(bodyParser({
-	extended: true
+	extended: true,
 }));
 
 const router = new RouterHandler(app);
